@@ -83,7 +83,7 @@ stepday <- summarize(stepday, steps = sum(steps)) #Sum steps by date
 hist(stepday$steps, main = "Steps Per Day", xlab = "Steps", col = "lightblue") #Make histogram of steps per day. 
 ```
 
-![](dp490111/filehash/project1_files/figure-html/section2-1.png)<!-- -->
+![](/project1_files/figure-html/section2-1.png)<!-- -->
 
 
 ```r
