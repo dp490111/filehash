@@ -83,7 +83,9 @@ stepday <- summarize(stepday, steps = sum(steps)) #Sum steps by date
 hist(stepday$steps, main = "Steps Per Day", xlab = "Steps", col = "lightblue") #Make histogram of steps per day. 
 ```
 
-![](/project1_files/figure-html/section2-1.png)<!-- -->
+![Graph1](/project1_files/figure-html/section2-1.png)
+
+
 
 
 ```r
@@ -108,7 +110,8 @@ intstep <- summarize(intstep, mean  = mean(steps, na.rm = TRUE)) #Sum steps by d
 plot(intstep$interval, intstep$mean, type = "l", main = "Average steps by interval", xlab = "Interval (minutes)", ylab = "Steps", col = "blue")
 ```
 
-![](/tree/master/project1_files/figure-html/section3-1.png)<!-- -->
+![Graph2](/tree/master/project1_files/figure-html/section3-1.png)<!-- -->
+
 
 ```r
 max_int <- intstep$interval[which(intstep$mean == max(intstep$mean))] #Find interval of max steps
@@ -144,7 +147,7 @@ stepday2 <- summarize(stepday2, steps = sum(steps)) #Sum steps by date
 hist(stepday2$steps, main = "Steps Per Day", xlab = "Steps", col = "lightblue") #Make histogram of steps per day. 
 ```
 
-![](/project1_files/figure-html/section4-1.png)<!-- -->
+![Graph3](/project1_files/figure-html/section4-1.png)<!-- -->
 
 ```r
 avg_spd2 <- mean(stepday2$steps) #Calculate average steps per day
@@ -190,7 +193,7 @@ g1 <- ggplot(intstep2, aes(x = interval, y = mean, color = wday)) + geom_line() 
 g1 + labs(title = "Weekday vs. Weekend Average Steps", x = "Interval (minutes)", y = "Average Steps", color = "Day") #add titles
 ```
 
-![](/project1_files/figure-html/section5-1.png)<!-- -->
+![Graph4](/project1_files/figure-html/section5-1.png)<!-- -->
 
 ```r
 #https://r-graphics.org/recipe-line-graph-multiple-line
