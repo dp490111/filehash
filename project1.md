@@ -85,6 +85,7 @@ hist(stepday$steps, main = "Steps Per Day", xlab = "Steps", col = "lightblue") #
 
 ![](project1_files/figure-html/section2-1.png)<!-- -->
 
+
 ```r
 avg_spd <- mean(stepday$steps, na.rm = TRUE) #Calculate average steps per day
 
@@ -107,7 +108,7 @@ intstep <- summarize(intstep, mean  = mean(steps, na.rm = TRUE)) #Sum steps by d
 plot(intstep$interval, intstep$mean, type = "l", main = "Average steps by interval", xlab = "Interval (minutes)", ylab = "Steps", col = "blue")
 ```
 
-![](filehash/tree/master/project1_files/figure-html/section3-1.png)<!-- -->
+![](/tree/master/project1_files/figure-html/section3-1.png)<!-- -->
 
 ```r
 max_int <- intstep$interval[which(intstep$mean == max(intstep$mean))] #Find interval of max steps
