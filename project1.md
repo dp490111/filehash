@@ -107,7 +107,7 @@ intstep <- summarize(intstep, mean  = mean(steps, na.rm = TRUE)) #Sum steps by d
 plot(intstep$interval, intstep$mean, type = "l", main = "Average steps by interval", xlab = "Interval (minutes)", ylab = "Steps", col = "blue")
 ```
 
-![](project1_files/figure-html/section3-1.png)<!-- -->
+![](filehash/tree/master/project1_files/figure-html/section3-1.png)<!-- -->
 
 ```r
 max_int <- intstep$interval[which(intstep$mean == max(intstep$mean))] #Find interval of max steps
